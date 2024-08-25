@@ -6,13 +6,15 @@ import { BsCart3 } from "react-icons/bs";
 import Badge from "../badge/Badge";
 import { MdClose } from "react-icons/md";
 import { RxHamburgerMenu } from "react-icons/rx";
+import Container from "../container/Container";
 
 
 const Navbar = () => {
   const [showMenu, setShowMenu] =useState(false)
   return (
     <header className="fixed w-full py-5 z-40 text-white bg-primary-700">
-      <div className="container flex justify-between items-center gap-5">
+      <Container>
+       <div className="flex justify-between items-center gap-5">
         <div className="z-10 md:hidden" onClick={() => setShowMenu(!showMenu)}>
           {showMenu ? <MdClose size={30} /> :  <RxHamburgerMenu size={30} /> }
          
@@ -75,7 +77,8 @@ const Navbar = () => {
             </Link>
           </Badge>
         </div>
-      </div>
+       </div>
+      </Container>
     </header>
   );
 };

@@ -1,10 +1,12 @@
+import Container from "@/components/container/Container";
 import Image from "next/image";
 import React from "react";
 
 const Hero = () => {
   return (
-    <section className="pt-32">
-      <div className="container h-72 flex justify-between items-center text-white bg-secondary-500">
+    <section className="pt-32 pb-5">
+      <Container>
+       <div className="h-72 flex justify-between items-center text-white bg-secondary-500">
         <div className="flex flex-1 md:flex-none justify-between md:justify-start items-center gap-5">
           <Image
             width={100}
@@ -37,7 +39,8 @@ const Hero = () => {
            alt="Banner black image"
            />
         </div>
-      </div>
+       </div>
+      </Container>
     </section>
   );
 };
