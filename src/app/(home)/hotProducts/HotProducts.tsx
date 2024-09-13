@@ -6,9 +6,9 @@ import Product from "@/components/product/Product";
 import { products } from "@/data";
 import Link from "next/link";
 import React, { useState } from "react";
-import { MdKeyboardDoubleArrowRight, MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { MdKeyboardDoubleArrowRight, } from "react-icons/md";
 
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Pagination, } from 'swiper/modules';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -142,7 +142,7 @@ const HotProducts = () => {
             >
              {products.map((item) =>(
               <SwiperSlide key={item.id}>
-               <Product key={item.id} item={item}  />
+               <Product item={item} showBlackButton objectCover  />
               </SwiperSlide>
               ))}
             </Swiper>

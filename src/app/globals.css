@@ -12,7 +12,10 @@
 }
 .swiper-button-prev,
 .swiper-button-next,
-.swiper-pagination {
+.swiper-pagination,
+.swiper-pagination-categories,
+.swiper-pagination-latestProduct,
+.swiper-pagination-phones {
     top: unset !important;
     left: unset !important;
     bottom: unset !important;
@@ -34,7 +37,10 @@
     margin-top: 10px !important;
     background-color: rgb(193, 182, 182);
 }
-.button-swiper {
+.button-swiper,
+.button-swiper-categories,
+.button-swiper-latestProduct,
+.button-swiper-phones {
     margin-top: 20px;
     display: flex;
     justify-content: center;
